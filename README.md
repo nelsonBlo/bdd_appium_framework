@@ -33,8 +33,10 @@ Setup Instructions
    ```sh
     pip install -r requirements.txt
    ```
+   It's highly recommended to use [python virtual environments](https://docs.python.org/3/library/venv.html)
+
 4. Connect to your machine the mobile device with the James Rider app installed on it. 
-You can use en Android Studio Emulator to load an emulated device.
+You can use en Android Studio Emulator to load an emulated device. App can be closed if needed.
 5. Run this command to get the emulated device name:
     ```sh
     emulator -list-avds
