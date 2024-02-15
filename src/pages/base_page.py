@@ -4,11 +4,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 """
-This BasePage class serves as the foundation for all page objects within the framework,
-centralizing common functionalities and properties.Integrates an action handler for performing actions like clicks and text inputs,
-equipped to handle intermediate elements like pop-ups or modals dynamically encountered during tests.
-The class provides a mechanism to update the web driver instance, ensuring actions are performed
-using the current session's driver, facilitating seamless test execution across different pages.
+This BasePage class serves as the foundation for all page objects within the framework. 
+Integrates an action handler for performing actions like clicks and text inputs,
 """
 
 
@@ -19,9 +16,6 @@ class BasePage:
 
 
     def _perform_with_retry(self, operation, locator, max_attempts=3, *args, **kwargs):
-        """
-        Retries an operation on an element, handling intermediate elements if necessary.
-        """
         last_exception = None
         for attempt in range(max_attempts):
             try:

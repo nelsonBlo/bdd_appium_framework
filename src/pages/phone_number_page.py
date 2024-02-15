@@ -1,10 +1,6 @@
 from appium.webdriver.common.appiumby import AppiumBy
 from pages.base_page import BasePage
 
-'''
-Page elements and methods related to Phone Number Page
-'''
-
 
 class PhoneNumberPage(BasePage):
     def __init__(self, context):
